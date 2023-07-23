@@ -22,7 +22,7 @@ class DocumentComponent extends Document {
 
       const initialProps = await Document.getInitialProps(ctx)
       const antdFileName = doExtraStyle({ cache: antdChache })
-      const antdStyleElement = <link rel='stylesheet' href={`/${antdFileName}`} />
+      const antdStyleElement = <link key='antdStylesheet' rel='stylesheet' href={`/${antdFileName}`} />
 
       return {
         ...initialProps,
