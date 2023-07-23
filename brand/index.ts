@@ -7,7 +7,7 @@ import { borderRadius } from './borderRadius'
 import { breakpoints } from './breakpoints'
 import { states } from './states'
 
-export const SkinInterfaceBrand = {
+export const F1AppBrand = {
   fonts,
   layers,
   spacings,
