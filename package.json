@@ -5,7 +5,9 @@
     "build": "next build",
     "dev": "next dev",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@ant-design/cssinjs": "1.9.1",
@@ -16,8 +18,18 @@
     "styled-components": "5.3.10"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.1.0",
+    "@storybook/addon-interactions": "^7.1.0",
+    "@storybook/addon-links": "^7.1.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.1.0",
+    "@storybook/nextjs": "^7.1.0",
+    "@storybook/react": "^7.1.0",
+    "@storybook/testing-library": "^0.2.0",
     "@types/node": "20.2.3",
     "@types/styled-components": "5.1.26",
+    "eslint-plugin-storybook": "^0.6.13",
+    "storybook": "^7.1.0",
     "typescript": "4.9.4"
   }
 }
