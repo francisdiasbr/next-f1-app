@@ -13,7 +13,7 @@ class DocumentComponent extends Document {
 
     try {
       ctx.renderPage = () => originalRenderPage({ enhanceApp: (App) => (props) => (
-        <StyleSheetManager sheet={sheet.instance}>
+        <StyleSheetManager sheet={sheet.instance} disableVendorPrefixes={true}>
           <StyleProvider cache={antdChache}>
             <App {...props} />
           </StyleProvider>
