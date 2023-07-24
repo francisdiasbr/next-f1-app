@@ -1,0 +1,8 @@
+.gitignore
+.prettierignore
+.prettier
+yarn.lock
+package.lock.json
+
+.next/**/*
+node_modules/**/*
