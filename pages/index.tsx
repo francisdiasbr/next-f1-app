@@ -4,7 +4,6 @@ import { GetServerSideProps } from 'next'
 import React from 'react'
 
 const PageIndex = ({}) => {
-
   const renderHeader = () => {
     return (
       <ClickableAsset
@@ -17,15 +16,11 @@ const PageIndex = ({}) => {
   }
 
   const renderContent = () => {
-    return (
-      <pre>content</pre>
-    )
+    return <pre>content</pre>
   }
 
   const renderFooter = () => {
-    return (
-      <pre>footer</pre>
-    )
+    return <pre>footer</pre>
   }
 
   return (

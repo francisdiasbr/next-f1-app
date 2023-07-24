@@ -5,15 +5,15 @@ import fs from 'fs'
 import path from 'path'
 
 export type DoExtraStyleOptions = {
-  cache: Entity;
-  dir?: string;
-  baseFileName?: string;
+  cache: Entity
+  dir?: string
+  baseFileName?: string
 }
 
 export function doExtraStyle({
   cache,
   dir = 'antd-output',
-  baseFileName = 'antd.min',
+  baseFileName = 'antd.min'
 }: DoExtraStyleOptions) {
   const baseDir = path.resolve(__dirname, '../../static/css')
 

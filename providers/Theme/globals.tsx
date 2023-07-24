@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
   body {
-    background-color: ${props => props.theme.colors.neutral600};
+    background-color: ${(props) => props.theme.colors.neutral600};
     height: 100vh;
     margin: 0px;
   }

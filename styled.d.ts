@@ -9,16 +9,14 @@ import { windowSizes } from 'brand/windowSizes'
 import 'styled-components'
 
 declare module 'styled-components' {
-
   export interface DefaultTheme extends SkinInterfaceDeclarations {
-    fonts: typeof fonts;
-    layers: typeof layers;
-    spacings: typeof spacings;
-    windowSizes: typeof windowSizes;
-    colors: typeof colors;
-    borderRadius: typeof borderRadius;
-    breakpoints: typeof breakpoints;
-    states: typeof states;
+    fonts: typeof fonts
+    layers: typeof layers
+    spacings: typeof spacings
+    windowSizes: typeof windowSizes
+    colors: typeof colors
+    borderRadius: typeof borderRadius
+    breakpoints: typeof breakpoints
+    states: typeof states
   }
-
 }
