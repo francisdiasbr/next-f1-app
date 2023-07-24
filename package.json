@@ -6,6 +6,8 @@
     "dev": "next dev",
     "export": "next export",
     "start": "next start",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prettier:check": "prettier --check .",
@@ -30,13 +32,12 @@
     "@storybook/testing-library": "^0.2.0",
     "@types/node": "20.2.3",
     "@types/styled-components": "5.1.26",
-    "@typescript-eslint/eslint-plugin": "^6.1.0",
-    "@typescript-eslint/parser": "^6.1.0",
-    "eslint": "^8.45.0",
-    "eslint-plugin-import-helpers": "^1.3.1",
-    "eslint-plugin-storybook": "^0.6.13",
-    "prettier": "^3.0.0",
+    "eslint-plugin-storybook": "0.6.13",
     "storybook": "^7.1.0",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "@typescript-eslint/eslint-plugin": "5.59.8",
+    "@typescript-eslint/parser": "5.59.8",
+    "eslint": "8.41.0",
+    "eslint-plugin-import-helpers": "1.3.1"
   }
 }
