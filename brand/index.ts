@@ -1,11 +1,11 @@
+import { borderRadius } from './borderRadius'
+import { breakpoints } from './breakpoints'
+import { colors } from './colors'
 import { fonts } from './fonts'
 import { layers } from './layers'
 import { spacings } from './spacings'
-import { windowSizes } from './windowSizes'
-import { colors } from './colors'
-import { borderRadius } from './borderRadius'
-import { breakpoints } from './breakpoints'
 import { states } from './states'
+import { windowSizes } from './windowSizes'
 
 export const F1AppBrand = {
   fonts,

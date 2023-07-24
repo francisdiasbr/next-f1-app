@@ -10,19 +10,18 @@ class DocumentComponent extends Document {
     const antdChache = createCache()
 
     try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) => (
-            <StyleSheetManager
-              sheet={sheet.instance}
-              disableVendorPrefixes={true}
-            >
-              <StyleProvider cache={antdChache}>
-                <App {...props} />
-              </StyleProvider>
-            </StyleSheetManager>
-          )
-        })
+      ctx.renderPage = () => originalRenderPage({
+        enhanceApp: (App) => (props) => (
+          <StyleSheetManager
+            sheet={sheet.instance}
+            disableVendorPrefixes={true}
+          >
+            <StyleProvider cache={antdChache}>
+              <App {...props} />
+            </StyleProvider>
+          </StyleSheetManager>
+        )
+      })
 
       const initialProps = await Document.getInitialProps(ctx)
       const antdFileName = doExtraStyle({ cache: antdChache })
@@ -36,7 +35,11 @@ class DocumentComponent extends Document {
 
       return {
         ...initialProps,
-        styles: [initialProps.styles, sheet.getStyleElement(), antdStyleElement]
+        styles: [
+          initialProps.styles,
+          sheet.getStyleElement(),
+          antdStyleElement
+        ]
       }
     } finally {
       sheet.seal()
